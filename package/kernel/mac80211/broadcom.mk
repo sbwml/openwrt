@@ -418,8 +418,7 @@ define KernelPackage/brcmfmac
 	+BRCMFMAC_USB:kmod-usb-core +BRCMFMAC_USB:brcmfmac-firmware-usb
   FILES:= \
 	$(PKG_BUILD_DIR)/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko \
-	$(foreach type,bca cyw wcc, \
-		$(PKG_BUILD_DIR)/drivers/net/wireless/broadcom/brcm80211/brcmfmac/$(type)/brcmfmac-$(type).ko)
+	$(PKG_BUILD_DIR)/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
   AUTOLOAD:=$(call AutoProbe,brcmfmac)
 endef
 
