@@ -27,7 +27,7 @@ Signed-off-by: Marty Jones <mj8263788@gmail.com>
 
 --- a/drivers/iommu/rockchip-iommu.c
 +++ b/drivers/iommu/rockchip-iommu.c
-@@ -1192,7 +1192,6 @@ static const struct iommu_ops rk_iommu_o
+@@ -1163,7 +1163,6 @@ static const struct iommu_ops rk_iommu_o
  	.of_xlate = rk_iommu_of_xlate,
  	.default_domain_ops = &(const struct iommu_domain_ops) {
  		.attach_dev	= rk_iommu_attach_device,
